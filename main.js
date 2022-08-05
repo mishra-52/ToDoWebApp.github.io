@@ -16,7 +16,7 @@ class UI{
     static addTaskToList(task){
         const li = document.querySelector('#todo-list');
         const row = document.createElement('tr');
-        row.innerHTML="<td>"+task.message+"</td><td><a href='#' class='btn btn-danger'>DELETE</a></td>";
+        row.innerHTML="<td class='text-break'>"+task.message+"</td><td><a href='#' class='btn btn-danger'>DELETE</a></td>";
         cnt++;
         li.appendChild(row);
     }
